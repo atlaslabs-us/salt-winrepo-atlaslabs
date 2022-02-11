@@ -1,7 +1,7 @@
 # Atlas Labs CAD-to-CAD integration software. This program runs on customer sites and synchronizes 
 # Computer aided dispatch systems between different vendors
 
-{% set SOURCE_PATH = 'http://cdn1.atlaslabs.io/downloads/windows' %}
+{% set SOURCE_PATH = 'http://ota.atlaslabs.io/downloads/windows' %}
 {% set PROGRAM_FILES = "%Program Files%" %}
 {% set VERSIONS = (('2.1.4.1', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
                    ('2.1.6.5', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
