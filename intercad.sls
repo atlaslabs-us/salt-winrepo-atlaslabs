@@ -6,13 +6,13 @@
 {% set VERSIONS = (('2.1.4.1', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
                    ('2.1.6.5', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
                    ('2.1.7.6', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
-                   ('2.3.0.9', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}')
+                   ('2.3.1.10', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}')
                   ) %}
 
 intercad:
   'latest':
     full_name: 'InterCAD'
-    installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.0.9.exe'
+    installer: '{{ SOURCE_PATH }}/InterCAD-v2.1.7.6.exe'
     uninstaller: 'msiexec'
     install_flags: '/qn /quiet /norestart'
     uninstall_flags: '/x {5A872D2F-98A0-4182-BAF0-EC3DDE00C324} /qn /quiet /norestart'
