@@ -6,15 +6,25 @@
 {% set VERSIONS = (('2.1.4.1', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
                    ('2.1.6.5', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
                    ('2.1.7.6', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
-                   ('2.3.2.19', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}')
+                   ('2.3.2.20', '{E3148BD3-11F9-4691-A554-C849246C7C12}')
                   ) %}
 
 intercad:
   'latest':
     full_name: 'Atlas Labs InterCAD'
-    installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.2.19.exe'
+    installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.2.20.exe'
     uninstaller: 'msiexec'
     install_flags: '/qn /quiet /norestart'
+    uninstall_flags: '/x {E3148BD3-11F9-4691-A554-C849246C7C12} /qn /quiet /norestart'
+    msiexec: False
+    locale: en_US
+    reboot: False
+
+  'reinstall':
+    full_name: 'Atlas Labs InterCAD'
+    installer: '{{ SOURCE_PATH }}/InterCAD-v2.1.7.6.exe'
+    uninstaller: 'msiexec'
+    install_flags: '/qn /quiet /norestart /fa REINSTALL=all REINSTALLMODE=A'
     uninstall_flags: '/x {5A872D2F-98A0-4182-BAF0-EC3DDE00C324} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
