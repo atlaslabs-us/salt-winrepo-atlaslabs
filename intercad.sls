@@ -35,7 +35,7 @@ intercad:
     full_name: 'Atlas Labs InterCAD'
     installer: '{{ SOURCE_PATH }}/InterCAD-v{{ version }}.exe'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart'
+    install_flags: '/fa {{ guid }} /qn /quiet /norestart /log C:\Atlas.InterCAD-{{ version }}.log'
     uninstall_flags: '/x {{ guid }} /qn /quiet /norestart'
     msiexec: False
     locale: en_US

@@ -14,7 +14,7 @@ cad-connector:
     full_name: 'CAD Connector'
     installer: '{{ SOURCE_PATH }}/CADConnector-v2.4.9.14.exe'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart'
+    install_flags: '/qn /quiet /norestart /Li "C:\\Atlas Labs LLC\\CADConnector-v2.4.9.14.log"'
     uninstall_flags: '/x {D5C2644D-0089-4C8C-AEED-6AAA0EA83839} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
