@@ -14,7 +14,7 @@ intercad:
     full_name: 'Atlas Labs InterCAD'
     installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.2.20.exe'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart'
+    install_flags: '/qn /quiet /norestart /log C:\Atlas.InterCAD-2.3.2.20'
     uninstall_flags: '/x {E3148BD3-11F9-4691-A554-C849246C7C12} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
@@ -35,7 +35,7 @@ intercad:
     full_name: 'Atlas Labs InterCAD'
     installer: '{{ SOURCE_PATH }}/InterCAD-v{{ version }}.exe'
     uninstaller: 'msiexec'
-    install_flags: '/fa {{ guid }} /qn /quiet /norestart /log C:\Atlas.InterCAD-{{ version }}.log'
+    install_flags: '/qn /quiet /norestart /log C:\Atlas.InterCAD-{{ version }}.log'
     uninstall_flags: '/x {{ guid }} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
