@@ -38,8 +38,8 @@ intercad:
     full_name: 'InterCAD'
     installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.2.26.exe'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart /fa REINSTALL=all REINSTALLMODE=A'
-    uninstall_flags: '/x {E3148BD3-11F9-4691-A554-C849246C7C12} /qn /quiet /norestart /log C:\AtlasInterCAD-v2.3.2.26.log'
+    install_flags: '/qn /quiet /norestart /log C:\AtlasInterCAD-v2.3.2.26-install.log'
+    uninstall_flags: '/x {E3148BD3-11F9-4691-A554-C849246C7C12} /qn /quiet /norestart /log C:\AtlasInterCAD-v2.3.2.26-uninstall.log'
     msiexec: False
     locale: en_US
     reboot: False
