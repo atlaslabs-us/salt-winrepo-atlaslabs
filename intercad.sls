@@ -44,6 +44,16 @@ intercad:
     locale: en_US
     reboot: False
 
+  '2.3.1.14':
+    full_name: 'Atlas Labs InterCAD'
+    installer: '{{ SOURCE_PATH }}/InterCAD-v2.3.1.14.exe'
+    uninstaller: 'msiexec'
+    install_flags: '/qn /quiet /norestart /log C:\AtlasInterCAD-v2.3.1.14-install.log'
+    uninstall_flags: '/x {E3148BD3-11F9-4691-A554-C849246C7C12} /qn /quiet /norestart /log C:\AtlasInterCAD-v2.3.1.14-uninstall.log'
+    msiexec: False
+    locale: en_US
+    reboot: False
+
 #  {% for version, guid in VERSIONS %}
 #  '{{ version }}':
 #    full_name: 'Atlas Labs InterCAD'
