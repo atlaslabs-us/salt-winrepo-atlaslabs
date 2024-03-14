@@ -12,11 +12,11 @@
                   ) %}
 
 intercad:
-  'latest':
-    full_name: 'Atlas Labs InterCAD 2.4.1.30'
-    installer: '{{ SOURCE_PATH }}/InterCAD-v2.4.1.30.exe'
+  'test':
+    full_name: 'Atlas Labs InterCAD {{ pillar['intercad']['version'] }}'
+    installer: '{{ SOURCE_PATH }}/InterCAD-v{{ pillar['intercad']['version'] }}'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart APPDIR="{{ INSTALL_PATH }}"'
+    install_flags: '/qn /quiet /norestart APPDIR="{{ INSTALL_PATH }}\{{ pillar['intercad']['version'] }}"'
     uninstall_flags: '/x {99430955-15B6-42DE-B9E8-D8C21D21F0A1} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
