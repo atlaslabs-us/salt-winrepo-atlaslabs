@@ -3,7 +3,8 @@
 
 {% set SOURCE_PATH = 'https://ota.atlaslabs.io/downloads/windows' %}
 {% set PROGRAM_FILES = "%Program Files%" %}
-{% set VERSIONS = (('2.4.9.14', '{D5C2644D-0089-4C8C-AEED-6AAA0EA83839}'), 
+{% set VERSIONS = (('2.4.10.5198', '{FAADE8B1-CE88-4840-93DC-C96E0F6FEC79}'), 
+                   ('2.4.9.14', '{D5C2644D-0089-4C8C-AEED-6AAA0EA83839}'), 
                    ('2.4.6.2', '{32E06E8A-2226-4619-B981-1E4C233DADB2}'), 
                    ('2.4.6.1', '{32E06E8A-2226-4619-B981-1E4C233DADB2}'), 
                    ('2.4.6.0', '{32E06E8A-2226-4619-B981-1E4C233DADB2}'), 
@@ -12,9 +13,9 @@
 cad-connector:
   'latest':
     full_name: 'CAD Connector'
-    installer: '{{ SOURCE_PATH }}/CADConnector-v2.4.9.14.exe'
+    installer: '{{ SOURCE_PATH }}/CADConnector-v2.4.10.5198'
     uninstaller: 'msiexec'
-    install_flags: '/qn /quiet /norestart /Li "C:\\Atlas Labs LLC\\CADConnector-v2.4.9.14.log"'
+    install_flags: '/qn /quiet /norestart /Li "C:\\Atlas Labs LLC\\CADConnector-2.4.10.5198.log"'
     uninstall_flags: '/x {D5C2644D-0089-4C8C-AEED-6AAA0EA83839} /qn /quiet /norestart'
     msiexec: False
     locale: en_US
