@@ -3,7 +3,8 @@
 
 {% set SOURCE_PATH = 'https://ota.atlaslabs.io/downloads/windows' %}
 {% set INSTALL_PATH = '%ProgramFiles%\Atlas Labs LLC\InterCAD' %}
-{% set VERSIONS = (('2.4.2.36', '{A8E14B50-E473-4843-B115-3C02F69F14CC}'),
+{% set VERSIONS = (('2.4.4.41', '{092FA1F9-8E08-4B35-9632-B728F591E983}'),
+                   ('2.4.2.36', '{A8E14B50-E473-4843-B115-3C02F69F14CC}'),
                    ('2.4.0.28', '{56E1C228-BE33-4FF0-80C6-DA7B1EF1DB0C}'),
                    ('2.3.2.26', '{E3148BD3-11F9-4691-A554-C849246C7C12}'),
                    ('2.1.7.6', '{5A872D2F-98A0-4182-BAF0-EC3DDE00C324}'),
